@@ -1,3 +1,5 @@
+[central dataset](https://github.com/OxCGRT/covid-policy-tracker/blob/master/data/OxCGRT_US_states_temp.csv)
+
 # USA-covid-policy
 Systematic dataset of US sub-national Covid-19 policy data
 
