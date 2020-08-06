@@ -1,29 +1,37 @@
-[central dataset](https://github.com/OxCGRT/covid-policy-tracker/blob/master/data/OxCGRT_US_states_temp.csv)
-
-# USA-covid-policy
+# USA-subnational Covid-19 Policy Responses
 Systematic dataset of US sub-national Covid-19 policy data
 
-This is a project from the [Blavatnik School of Government](www.bsg.ox.ac.uk), the [FGV EBAPE – Escola Brasileira de Administração Pública e de Empresas](https://ebape.fgv.br), and the [University of São Paulo](http://dcp.fflch.usp.br), drawing on the [Blavatnik School of Government OxCGRT](https://www.bsg.ox.ac.uk/covidtracker).
+This is a project from the [Blavatnik School of Government](www.bsg.ox.ac.uk), drawing on the [Blavatnik School of Government OxCGRT](https://www.bsg.ox.ac.uk/covidtracker).
 
 More information is available on the project's website: [https://www.bsg.ox.ac.uk/research/research-projects/brazils-covid-19-policy-response](https://www.bsg.ox.ac.uk/research/research-projects/brazils-covid-19-policy-response).
 
 ---
 
-__Cite as:__ Anna Petherick, Rafael Goldszmidt, Beatriz Kira, and Lorena Barberia. (June 2020).[ _Do Brazil’s Covid-19 Government Response Measures Meet the WHO’s Criteria for Policy Easing?_](https://www.bsg.ox.ac.uk/research/publications/do-brazils-covid-19-government-response-measures-meet-whos-criteria-policy) Blavatnik School of Government Working Paper.
+__Cite as:__ Thomas Hale, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira. (2020). _Oxford COVID-19 Government Response Tracker_. Blavatnik School of Government.
 
 ---
 
-### Dataset of Brazilian sub-national Covid-19 government response policies
-Drawing on the Oxford COVID-19 Government Response Tracker (OxCGRT) [coding system](https://github.com/OxCGRT/Brazil-covid-policy/blob/master/documentation/codebook_subnational.md), we provide a systematic and objective account of the strength of Covid-19 response policies that have been instigated by Brazil’s federal, state, and state-capital governments. Currently we provide coding up to 31 May 2020 for all indicators of the [stringency index](https://github.com/OxCGRT/Brazil-covid-policy/blob/master/documentation/stringency_index_methodology.md), and for eight of Brazil's state capitals. 
+### Dataset of USA sub-national Covid-19 government response policies
+Drawing on the Oxford COVID-19 Government Response Tracker (OxCGRT) [coding system](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md), we provide a systematic and objective account of the strength of Covid-19 response policies that have been instigated by the USA’s national government, state governments, and governments of Washington DC and the US Virgin Islands. Currently we provide coding up to 31 July 2020 for 13 indicators: C1 through C8, E1, E2, and H1 through H3. These indicators allow creation of four different [indices](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md): the stringency index, containment and health index, government response index, and economic support index. These data are presented separately from the primary OxCGRT repo, but may be later incorporated into the primary OxCGRT codebook.
 
+### Differences from primary OxCGRT data 
+This repo contains data for two jurisdictions, described using the suffixes of "GOV" and "ALL." Policies described with the suffix "GOV" refers to policies issued by a specific level of government, and can be used to compare government responses across different levels of government. Policies with the suffix "ALL" describe all government responses relevant to a given jurisdiction. The USA subnational repo contains two descriptive labels:
+- NAT_GOV: Policies issued by the USA federal government only.
+- STATE_ALL: Policies issued by state governments and by sub-state governments.
 
-### Survey data on citzens experiences and opinions relating to Covid-19 and government policies
-We also present the original [results](https://github.com/OxCGRT/Brazil-covid-policy/blob/master/data/OxCGRT_Brazil_Subnational_31May2020.csv) of a survey of 1,654 citizens across eight state capitals. The survey was designed to ascertain the extent to which reality on the ground in these eight cities meets the World Health Organization’s (WHO) [list of recommendations](https://apps.who.int/iris/bitstream/handle/10665/331773/WHO-2019-nCoV-Adjusting_PH_measures-2020.1-eng.pdf)  of the measures that should be put in place before Covid-19 response policies can be safely relaxed.
+For this repo's STATE_ALL distinction, the "ALL" suffix observations do not incorporate policies from higher levels of government that may supercede local policies. For example, if a country has an international travel restriction that applies country-wide, this would appear as a NAT_GOV policy and not within STATE_ALL. For this US subnational repo, examples of policies included in STATE_ALL involve state governments' policies, as well as county and city policies (the latter two would be coded as "targeted" STATE_ALL policies per the masterOxCGRT [codebook](documentation/codebook.md). This is a distinct data product from that found in the [primary](https://github.com/OxCGRT/covid-policy-tracker) OxCGRT data repo, where subnational data includes inherited policies from higher levels that affect that jurisdiction.
 
-The survey was conducted over the phone between 6 to 27 May. It uses randomised stratified sampling by age, sex, income and education level.
+### Further interpretation
+Indicator meanings and interpretation of targeted/general distinctions for subnational data products are consistent with those in the existing OxCGRT [codebook](documentation/codebook.md). 
+
+### Our documentation and working papers have more information
+The US subnational [working paper](https://www.bsg.ox.ac.uk/research/publications/variation-USstate-responses-covid-19) describes the subnational US methodology, data collection protocols, and indicator descriptions.
+
+### Getting data from this GitHub repository
+The [/data](data/) folder in this repo contains recent exports from the OxCGRT database. You are welcome to build applications that draw directly from this repository.
+
+The CSV file [/data/OxCGRT_US_states_temp.csv](data/OxCGRT_US_states_temp.csv) is a full export from the database presented in "state-day" format, with a column of notes from our data collectors for each indicator. This is updated manually on a weekly basis. Please note that some of the comments contain commas and other characters interpreted as a delimiter, and so may cause problems when parsing this CSV file.
 
 
 ### Acknowledgments
-The authors thank they colleagues for commentary on the survey questions, especially Eduardo Andrade, Thomas Hale, Toby Phillips, Clare Leaver and Cesar Zucco. The survey was funded by the Global Challenges Research Fund, [The Alfred Landecker Foundation](https://www.bsg.ox.ac.uk/research/research-programmes/alfred-landecker-programme), and [Blavatnik School of Government](www.bsg.ox.ac.uk).
-
-The OxCGRT Brazil subnational coders are: André Houang, Anna Paula Ferrari Matos, Beatriz Franco, Beatriz Kira, Camilla Sacchetto, Carla Almeida da Vila, Carolina Martinelli, Carolina Scherer Beidacki, Celso Antônio Coelho Júnior, Daniel Pereira Cabral, Davi Mamblona Marques Romão, Dayane Ferreira, Denilson Soares Gomes Junior, Elisangela Oliveira de Freitas, Fabiana da Silva Pereira, Gabriel de Azevedo Soyer, Guilherme Ramos, Henrique Oliveira da Motta, Horácio Figueira de Moura Neto, Isabel Seelaender Costa Rosa, Isabela Blumm, João Ferreira Silva, João Gabriel de Paula Resende, José Renato Venâncio Resende, Laura dos Santos Boeira, Letícia Plaza, Luiz Guilherme Roth Cantarelli, Marcela Mello Zamudio, Maria Leticia Claro de Faria Oliveira, Maria Luciano, Marta Koch, Matheus Porto Lucena, Maurício Nardi Valle, Natalia Brigagão, Natália Colvero Maraschin, Natália de Paula Moreira, Nicole Guedes Barros, Pedro Arcain Riccetto, Pedro Ferreira Baccelli Reis, Pedro Santana Schmalz, Pollyana Pacheco Lima, Ricardo Miranda Rocha Leitão, Rodrigo Furst de Freitas Accetta, Tamoi Fujii, and Teresa Soter Henriques.
+The OxCGRT USA subnational coders are: Alonso Moran de Romana, Andrew Brown, Anna Petherick, Anna Welsh, Anthony Sudarmawan, Ariq Hatibie, Arthur Lau, Beatriz Kira, Cassy Inman, Christian Lumley, Dang Dao Nguyen, Diane Brandt, Edward O'Brien, Emily Cameron-Blake, Emma Leonard, Helen Tatlow, India Clancy, Jeanna Kim, Joy Carveth, Kaitlyn Green, Katherine McCreery, Kelly Daniels, Kristie Jameson, Laura Chamberlain, Laura de Lisle, Laura Hallas, Leanne Giordono, Mariam Raheem, Marie Mavrikios, Michelle Sharma, Monika Pyarali, Nadine Dogbe, Nate Dolton-Thornton, Nikhil Tekwani, Paraskevas Christodoulopoulos, Quyn Lam Vo (Lam), Rahima Hanifa, Raymond Pottebaum, Rene' Landers, Saptarshi Majumdar, Sara Sethia, Sena Pradipta, Seun Adebayo, Stephanie Guyett, Thomas Hale, Tim Nusser, Toby Phillips, Veronique Gauthier, Zara Raheem, Zoha Imran
