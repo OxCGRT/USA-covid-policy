@@ -16,6 +16,8 @@ Drawing on the Oxford COVID-19 Government Response Tracker (OxCGRT) [coding syst
 
 The US state data has been incorporated into the primary [OxCGRT/covid-policy-tracker](https://github.com/OxCGRT/covid-policy-tracker) repository. This repository contains **a secondary dataset that cannot be interpreted alongisde our primary country data**, but may be of interest nonetheless. The differences are described below.
 
+The [subnational documentation](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/subnational_interpretation.md) on our primary [OxCGRT/covid-policy-tracker](https://github.com/OxCGRT/covid-policy-tracker) repository contains more information about how to interpret subnational data.
+
 ### Differences from primary OxCGRT data 
 This repo contains data for two levels of policies, described using the suffixes of "GOV" and "ALL." Policies described with the suffix "GOV" refers to policies issued by a specific level of government, and can be used to compare government responses across different levels of government. Policies with the suffix "ALL" describe all government responses taken by a specific jursidiction and those below it, but do not include policy decisions taken by higher-level jurisdictions. The USA subnational repo contains two descriptive labels:
 - NAT_GOV: Policies issued by the USA federal government only.
