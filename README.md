@@ -1,5 +1,7 @@
-# USA-subnational Covid-19 Policy Responses
+# USA state level Covid-19 Policy Responses
 Systematic dataset of USA sub-national Covid-19 policy data
+
+**NOTE:** for US state data that is directly comparable with our country-level data, please visit our [OxCGRT/covid-policy-tracker](https://github.com/OxCGRT/covid-policy-tracker) repository.
 
 This is a project from the [Blavatnik School of Government](https://www.bsg.ox.ac.uk), drawing on the [Blavatnik School of Government OxCGRT](https://www.bsg.ox.ac.uk/covidtracker).
 
@@ -12,6 +14,7 @@ __Cite as:__ Thomas Hale, Tilbe Atav, Laura Hallas, Beatriz Kira, Toby Phillips,
 ---
 
 ### Dataset of USA sub-national Covid-19 government response policies
+
 Drawing on the Oxford COVID-19 Government Response Tracker (OxCGRT) [coding system](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md), we provide a systematic and objective account of the strength of Covid-19 response policies that have been instigated by the USA’s national government, state governments, and governments of Washington DC and the US Virgin Islands. Currently we provide coding up to 31 July 2020 for 13 indicators: C1 through C8, E1, E2, and H1 through H3. These indicators allow the creation of four different [indices](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md): the stringency index, the containment and health index, the economic support index, and the government response index.
 
 The US state data has been incorporated into the primary [OxCGRT/covid-policy-tracker](https://github.com/OxCGRT/covid-policy-tracker) repository. This repository contains **a secondary dataset that cannot be interpreted alongisde our primary country data**, but may be of interest nonetheless. The differences are described below.
@@ -19,6 +22,7 @@ The US state data has been incorporated into the primary [OxCGRT/covid-policy-tr
 The [subnational documentation](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/subnational_interpretation.md) on our primary [OxCGRT/covid-policy-tracker](https://github.com/OxCGRT/covid-policy-tracker) repository contains more information about how to interpret subnational data.
 
 ### Differences from primary OxCGRT data 
+
 This repo contains data for two levels of policies, described using the suffixes of "GOV" and "ALL." Policies described with the suffix "GOV" refers to policies issued by a specific level of government, and can be used to compare government responses across different levels of government. Policies with the suffix "ALL" describe all government responses taken by a specific jursidiction and those below it, but do not include policy decisions taken by higher-level jurisdictions. The USA subnational repo contains two descriptive labels:
 - NAT_GOV: Policies issued by the USA federal government only.
 - STATE_ALL: Policies issued by state governments and by sub-state governments.
@@ -28,14 +32,18 @@ For this repo's STATE_ALL distinction, the "ALL" suffix observations do not inco
 For this US subnational repo, examples of policies included in STATE_ALL involve state governments' policies, as well as county and city policies (the latter two would be coded as "targeted" STATE_ALL policies per the [OxCGRT codebook](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md). This is a distinct data product from that found in the primary [OxCGRT/covid-policy-tracker](https://github.com/OxCGRT/covid-policy-tracker) data repo, where subnational data includes inherited policies from higher levels that affect that jurisdiction.
 
 ### Further interpretation
+
 Flags representing distinctions between targeted/general measures for subnational data products are consistent with those in the existing OxCGRT [codebook](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md). 
 
 ### Our documentation and working papers have more information
+
 The US subnational [working paper](https://www.bsg.ox.ac.uk/research/publications/variation-us-states-responses-covid-19) describes the subnational US methodology, data collection protocols, and indicator descriptions.
 
 ### Getting data from this GitHub repository
+
 The [/data](data/) folder in this repo contains recent exports from the OxCGRT database. You are welcome to build applications that draw directly from this repository. The data is a full export from the database presented in "state-day" format, with a column of notes from our data collectors for each indicator. This is updated manually on a regular basis, and so the file name may change. Please note that some of the comments contain commas and other characters interpreted as a delimiter, and so may cause problems when parsing this CSV file.
 
 
 ### Acknowledgments
+
 The OxCGRT USA subnational coders are: Alonso Moran de Romana, Andrew Brown, Anna Petherick, Anna Welsh, Anthony Sudarmawan, Ariq Hatibie, Arthur Lau, Beatriz Kira, Cassy Inman, Christian Lumley, Dang Dao Nguyen, Diane Brandt, Edward O'Brien, Emily Cameron-Blake, Emma Leonard, Helen Tatlow, India Clancy, Jeanna Kim, Joy Carveth, Kaitlyn Green, Katherine McCreery, Kelly Daniels, Kristie Jameson, Laura Chamberlain, Laura de Lisle, Laura Hallas, Leanne Giordono, Mariam Raheem, Marie Mavrikios, Michelle Sharma, Monika Pyarali, Nadine Dogbe, Nate Dolton-Thornton, Nikhil Tekwani, Paraskevas Christodoulopoulos, Quyn Lam Vo (Lam), Rahima Hanifa, Raymond Pottebaum, Rene' Landers, Saptarshi Majumdar, Sara Sethia, Sena Pradipta, Seun Adebayo, Stephanie Guyett, Thomas Hale, Tim Nusser, Toby Phillips, Veronique Gauthier, Zara Raheem, Zoha Imran
