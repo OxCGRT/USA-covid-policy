@@ -28,9 +28,7 @@ Indicator meanings and interpretation of targeted/general distinctions for subna
 The US subnational [working paper](https://www.bsg.ox.ac.uk/research/publications/variation-USstate-responses-covid-19) describes the subnational US methodology, data collection protocols, and indicator descriptions.
 
 ### Getting data from this GitHub repository
-The [/data](data/) folder in this repo contains recent exports from the OxCGRT database. You are welcome to build applications that draw directly from this repository.
-
-The CSV file [/data/OxCGRT_US_states_temp.csv](data/OxCGRT_US_states_temp.csv) is a full export from the database presented in "state-day" format, with a column of notes from our data collectors for each indicator. This is updated manually on a weekly basis. Please note that some of the comments contain commas and other characters interpreted as a delimiter, and so may cause problems when parsing this CSV file.
+The [/data](data/) folder in this repo contains recent exports from the OxCGRT database. You are welcome to build applications that draw directly from this repository. The data is a full export from the database presented in "state-day" format, with a column of notes from our data collectors for each indicator. This is updated manually on a weekly basis. Please note that some of the comments contain commas and other characters interpreted as a delimiter, and so may cause problems when parsing this CSV file.
 
 
 ### Acknowledgments
