@@ -23,13 +23,15 @@ The [subnational documentation](https://github.com/OxCGRT/covid-policy-tracker/b
 
 ### Differences from primary OxCGRT data 
 
-This repo contains data for two levels of policies, described using the suffixes of "GOV" and "ALL." Policies described with the suffix "GOV" refers to policies issued by a specific level of government, and can be used to compare government responses across different levels of government. Policies with the suffix "ALL" describe all government responses taken by a specific jursidiction and those below it, but do not include policy decisions taken by higher-level jurisdictions. The USA subnational repo contains two descriptive labels:
+This repo contains data for two levels of policies, described using the suffixes of "GOV" and "WIDE." Policies described with the suffix "GOV" refers to policies issued by a specific level of government, and can be used to compare government responses across different levels of government. Policies with the suffix "WIDE" describe all government responses taken by a specific jurisdiction and those below it, but do not include policy decisions taken by higher-level jurisdictions. The USA subnational repo contains two descriptive labels:
 - NAT_GOV: Policies issued by the USA federal government only.
-- STATE_ALL: Policies issued by state governments and by sub-state governments.
+- STATE_WIDE: Policies issued by state governments and by sub-state governments.
 
-For this repo's STATE_ALL distinction, the "ALL" suffix observations do not incorporate policies from higher levels of government that may supercede local policies. For example, if a country has an international travel restriction that applies country-wide, this would appear as a NAT_GOV policy and not within STATE_ALL.
+For this repo's STATE_WIDE distinction, the "WIDE" suffix observations do not incorporate policies from higher levels of government that may supercede local policies. For example, if a country has an international travel restriction that applies country-wide, this would appear as a NAT_GOV policy and not within STATE_WIDE.
 
-For this US subnational repo, examples of policies included in STATE_ALL involve state governments' policies, as well as county and city policies (the latter two would be coded as "targeted" STATE_ALL policies per the [OxCGRT codebook](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md). This is a distinct data product from that found in the primary [OxCGRT/covid-policy-tracker](https://github.com/OxCGRT/covid-policy-tracker) data repo, where subnational data includes inherited policies from higher levels that affect that jurisdiction.
+Note that STATE_WIDE observations at the subnational level, which code the totality of policies at a given level of government and its sub-levels, also capture policies that the national government may specifically target at a subnational jurisdiction. This is the case, for example, if a national government orders events to close in a particular city experiencing an outbreak. These kinds of policies are not inferred from NAT_GOV but coded directly at the sub-national level.
+
+For this US subnational repo, examples of policies included in STATE_WIDE involve state governments' policies, as well as county and city policies (the latter two would be coded as "targeted" STATE_WIDE policies per the [OxCGRT codebook](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md). This is a distinct data product from that found in the primary [OxCGRT/covid-policy-tracker](https://github.com/OxCGRT/covid-policy-tracker) data repo, where subnational data includes inherited policies from higher levels that affect that jurisdiction.
 
 ### Further interpretation
 
