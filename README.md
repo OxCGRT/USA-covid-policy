@@ -9,7 +9,7 @@ More information is available on the project's website: [https://www.bsg.ox.ac.u
 
 ---
 
-__Cite as:__ Thomas Hale, Tilbe Atav, Laura Hallas, Beatriz Kira, Toby Phillips, Anna Petherick, and Annalena Pott (2020). [_Variation in US states’ responses to COVID-19_](https://www.bsg.ox.ac.uk/research/publications/variation-us-states-responses-covid-19). Blavatnik School of Government.
+__Cite as:__ Laura Hallas, Ariq Hatibie, Saptarshi Majumdar, Monika Pyarali, and Thomas Hale (2020). [_Variation in US states’ responses to COVID-19_2.0] (https://www.bsg.ox.ac.uk/research/publications/variation-us-states-responses-covid-19). Blavatnik School of Government.
 
 ---
 
