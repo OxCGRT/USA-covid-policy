@@ -18,6 +18,7 @@ jobs:
       - name: Download a raw CSV of US non-imputed values from OxCGRT database
         run: |
           curl 'https://oxcgrtportal.azurewebsites.net/api/csvdownload?type=subnational_us' -s -f -o 'data/OxCGRT_US_latest.csv'
+          curl 'https://oxcgrtportal.azurewebsites.net/api/csvdownload?type=vaccine_full_us' -s -f -o 'data/OxCGRT_US_vaccines_full.csv'
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
