@@ -1,3 +1,7 @@
+| **End of OxCGRT data collection, December 2022** |
+| --- |
+| The Oxford COVID-19 Government Response Tracker will stop publishing real-time updates for most jurisdictions at the end of 2022. Reviewing and confirming data will continue into 2023. Most governments around the world have settled into a steady state of pandemic-related policy – there are not many significant changes for us to report. </br></br>At this stage, we are planning to continue publishing data for individual Chinese provinces into 2023, as there is still significant policy variation and change. We will publish a separate repository for this soon. </br></br>We have posted a longer update on the [Blavatnik School of Government website](https://www.bsg.ox.ac.uk/future-oxford-covid-19-government-response-tracker). The OxCGRT dataset will continue to be available, primarily on this GitHub repository, and we will establish a lasting internet presence over the course of 2023. Our main channel for updates will be our data users mailing list, which you can join here: http://eepurl.com/hiMsdL |
+
 # USA state level Covid-19 Policy Responses
 Systematic dataset of USA sub-national Covid-19 policy data
 
